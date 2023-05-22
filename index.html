@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Gerais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">Consultas Gerais</div>
+            <div class="menu">
+                <ul>
+                    <li class="consultas">
+                        <div class="consultas-title">Consultas </div>
+                    </li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Outros</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="consultas">
+        <button class="btn-consulta c-cnpj">CNPJ</button>
+        <button class="btn-consulta c-ncm" disabled>NCM</button>
+        <button class="btn-consulta c-cep" disabled>CEP</button>
+        <button class="btn-consulta c-bancos" disabled>Bancos</button>
+        <button class="btn-consulta c-ddd" disabled>DDD</button>
+        <button class="btn-consulta c-tabFipe" disabled>Tabela Fipe</button>
+        <button class="btn-consulta c-codIbge" disabled>Cógio Município (IBGE)</button>
+        <button class="btn-consulta c-dominios" disabled>Domínios Registrados</button>
+    </section>
+
+    <section class="consultaCNPJ close">
+        <div class="container-consultaCNPJ">
+            <div class="consulta">
+                <input type="text" name="cnpj" id="cnpj-input" placeholder="Digite o CNPJ sem pontos">
+                <button id="consultar">Consultar CNPJ</button>
+                <button id="novaConsulta">Nova Consulta</button>
+                <button id="imprimir">Imprimir</button>
+                <button id="fechar">Fechar</button>
+            </div>
+            <div class="resultado close">
+                <div class="resultadoConsultaCNPJ">
+                    <div class="r-cnpj"></div>
+                    <div class="r-id-mat-filial"></div>
+                    <div class="r-desc-mat-filial"></div> 
+                    <div class="r-razao-social"></div>
+                    <div class="r-nome-fantasia"></div>
+                    <div class="r-sit-cad"></div>
+                    <div class="r-desc-sit-cad"></div>
+                    <div class="r-data-sit-cad"></div>
+                    <div class="r-data-inicio-ativ"></div>
+                    <div class="r-cnae-fiscal"></div>
+                    <div class="r-cane-fiscal-desc"></div>
+                    <div class="r-tipo-logr"></div>
+                    <div class="r-logradouro"></div>
+                    <div class="r-numero"></div>
+                    <div class="r-complemento"></div>
+                    <div class="r-bairro"></div>
+                    <div class="r-cep"></div>
+                    <div class="r-uf"></div>
+                    <div class="r-cod-municipio"></div>
+                    <div class="r-municipio"></div>
+                    <div class="r-tel-1"></div>
+                    <div class="r-capital-social"></div>
+                    <div class="r-porte"></div>
+                </div>
+        
+                <div class="resultadoSocios">
+                    <div class="socio">
+                        <div class="r-nomeSocio"></div>
+                        <div class="r-faixaEtaria"></div>
+                        <div class="r-cnpj-cpf-socio"></div>
+                        <div class="r-qualifSocio"></div>
+                        <div class="r-dataSociedade"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>

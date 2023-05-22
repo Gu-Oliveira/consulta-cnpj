@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+header{
+    display: flex;
+    background-color: #eee;
+    padding: 20px 0;
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* logo */
+
+.logo{
+    font-weight: bold;
+    font-size: 20px
+}
+
+/* menu */
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 25px;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* section consultas */
+
+section.consultas{
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.btn-consulta{
+    padding: 10px;
+    cursor: pointer;
+    flex-basis: calc(100% / 4);
+    margin: 10px 0;
+}
+
+/* section consulta cnpj */
+
+.consultaCNPJ{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /*background: #ccccccd7;*/
+    background: white;
+}
+
+.consultaCNPJ input,
+.consultaCNPJ button{
+    padding: 5px 15px;
+    outline: none;
+}
+
+.consultaCNPJ button{
+    cursor: pointer;
+    transition: all ease 0.3s;
+    
+}
+
+#fechar:hover{
+    background-color: rgb(238, 150, 150);
+    border: 2px solid rgb(238, 150, 150);
+}
+
+#consultar:hover{
+    background-color: rgb(150, 166, 238);
+    border: 2px solid rgb(150, 166, 238);
+}
+
+.consulta{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado{
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.resultadoConsultaCNPJ{
+    border: 1px solid black;
+}
+
+.resultadoSocios{
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+/* class para fechar as telas */
+
+.close{
+    display: none;
+}
+
+
