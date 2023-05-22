@@ -90,7 +90,7 @@ btnConsultar.addEventListener('click', ()=>{
   if(cnpj === ''){
     alert('Insira um CNPJ para consultar.')
   }else if(cnp.test(cnpj)){
-    alert("Inrira somente números para consultar.")
+    alert("Insira somente números para consultar.")
   }else{
     document.querySelector('.resultado').classList.toggle('close')
 
